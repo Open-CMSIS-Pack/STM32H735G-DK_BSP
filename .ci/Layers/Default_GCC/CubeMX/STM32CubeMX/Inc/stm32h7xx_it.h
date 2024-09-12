@@ -57,6 +57,8 @@ void USART3_IRQHandler(void);
 void ETH_IRQHandler(void);
 void OTG_HS_IRQHandler(void);
 void SPI5_IRQHandler(void);
+void I2C4_EV_IRQHandler(void);
+void I2C4_ER_IRQHandler(void);
 void TIM23_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
