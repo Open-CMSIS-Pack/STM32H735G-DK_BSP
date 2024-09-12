@@ -607,6 +607,11 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* hi2c)
 
     /* Peripheral clock enable */
     __HAL_RCC_I2C4_CLK_ENABLE();
+    /* I2C4 interrupt Init */
+    HAL_NVIC_SetPriority(I2C4_EV_IRQn, 8, 0);
+    HAL_NVIC_EnableIRQ(I2C4_EV_IRQn);
+    HAL_NVIC_SetPriority(I2C4_ER_IRQn, 8, 0);
+    HAL_NVIC_EnableIRQ(I2C4_ER_IRQn);
   /* USER CODE BEGIN I2C4_MspInit 1 */
 
   /* USER CODE END I2C4_MspInit 1 */
@@ -639,6 +644,9 @@ void HAL_I2C_MspDeInit(I2C_HandleTypeDef* hi2c)
 
     HAL_GPIO_DeInit(I2C4_SCL_GPIO_Port, I2C4_SCL_Pin);
 
+    /* I2C4 interrupt DeInit */
+    HAL_NVIC_DisableIRQ(I2C4_EV_IRQn);
+    HAL_NVIC_DisableIRQ(I2C4_ER_IRQn);
   /* USER CODE BEGIN I2C4_MspDeInit 1 */
 
   /* USER CODE END I2C4_MspDeInit 1 */
@@ -1270,7 +1278,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     hdma_spi5_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
     hdma_spi5_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
     hdma_spi5_rx.Init.Mode = DMA_NORMAL;
-    hdma_spi5_rx.Init.Priority = DMA_PRIORITY_HIGH;
+    hdma_spi5_rx.Init.Priority = DMA_PRIORITY_LOW;
     hdma_spi5_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
     if (HAL_DMA_Init(&hdma_spi5_rx) != HAL_OK)
     {
@@ -1288,7 +1296,7 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     hdma_spi5_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
     hdma_spi5_tx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
     hdma_spi5_tx.Init.Mode = DMA_NORMAL;
-    hdma_spi5_tx.Init.Priority = DMA_PRIORITY_HIGH;
+    hdma_spi5_tx.Init.Priority = DMA_PRIORITY_LOW;
     hdma_spi5_tx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
     if (HAL_DMA_Init(&hdma_spi5_tx) != HAL_OK)
     {
