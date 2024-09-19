@@ -1,4 +1,6 @@
-# Overview
+# STM32H735G-DK Discovery kit
+
+## Overview
 
 The STM32H735G-DK Discovery kit is a complete demonstration and development platform for Arm® Cortex®-M7 core-based STM32H735IGK6 microcontroller, with 1 Mbyte of flash memory and 564 Kbytes of SRAM.
 
@@ -8,11 +10,11 @@ The full range of hardware features available on the board helps users to enhanc
 
 STLINK-V3E is integrated into the board, as the embedded in-circuit debugger and programmer for the STM32 MCU and USB Virtual COM port bridge.
 
-# Getting started
+## Getting started
 
 - [User manual](https://www.st.com/resource/en/user_manual/um2679-discovery-kit-with-stm32h735ig-mcu-stmicroelectronics.pdf)
 
-## ST-LINK driver installation and firmware upgrade (on Microsoft Windows)
+### ST-LINK driver installation and firmware upgrade (on Microsoft Windows)
 
 1. Download the latest [ST-LINK driver](https://www.st.com/en/development-tools/stsw-link009.html).
 2. Extract the archive and run `dpinst_amd64.exe`. Follow the displayed instructions.
@@ -23,7 +25,7 @@ STLINK-V3E is integrated into the board, as the embedded in-circuit debugger and
 7. When the ST-LINK driver is correctly installed, the current ST-LINK version is displayed.
 8. Press the **Yes >>>>** button to start the firmware upgrade process.
 
-# Technical reference
+## Technical reference
 
 - [STM32H735IG microcontroller](https://www.st.com/en/microcontrollers-microprocessors/stm32h735ig.html)
 - [STM32H735G-DK board](https://www.st.com/en/evaluation-tools/stm32h735g-dk.html)

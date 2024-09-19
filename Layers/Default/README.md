@@ -1,5 +1,4 @@
-Board: STMicroelectronics [STM32H735G-DK](https://www.st.com/en/evaluation-tools/stm32h735g-dk.html)
-------------------------------------------
+# Board: STMicroelectronics [STM32H735G-DK](https://www.st.com/en/evaluation-tools/stm32h735g-dk.html)
 
 Device: **STM32H735IGK6**
 System Core Clock: **550 MHz**
@@ -7,18 +6,18 @@ System Core Clock: **550 MHz**
 This setup is configured using **STM32CubeMX**, an interactive tool provided by STMicroelectronics for device configuration.
 Refer to ["Configure STM32 Devices with CubeMX"](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md) for additional information.
 
-### System Configuration
+## System Configuration
 
 | System resource       | Setting
 |:----------------------|:----------------------------------------------
 | Heap                  | 1 kB (configured in the STM32CubeMX)
 | Stack (MSP)           | 1 kB (configured in the STM32CubeMX)
 
-### STDIO mapping
+## STDIO mapping
 
 **STDIO** is routed to Virtual COM port on the ST-Link (using **USART3** peripheral)
 
-### CMSIS-Driver mapping
+## CMSIS-Driver mapping
 
 | CMSIS-Driver          | Peripheral
 |:----------------------|:----------------------------------------------
@@ -31,7 +30,7 @@ Refer to ["Configure STM32 Devices with CubeMX"](https://github.com/Open-CMSIS-P
 | Driver_USART1         | USART1
 | Driver_USBD1          | USB_OTG_HS (in FS mode)
 
-### CMSIS-Driver Virtual I/O mapping
+## CMSIS-Driver Virtual I/O mapping
 
 | CMSIS-Driver VIO      | Physical resource
 |:----------------------|:----------------------------------------------
