@@ -63,9 +63,3 @@ Refer to ["Configure STM32 Devices with CubeMX"](https://github.com/Open-CMSIS-P
 | Digital I/O: D19      | GPIO0  Driver (ARDUINO_UNO_D19)
 
 Reference to [Arduino UNO connector description](https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/ReferenceApplications.md#arduino-shield).
-
-## Board configuration
-
-**Board setup**
-  - Insure that the **5V PWR** is in the **STLK** position
-  - Connect a **USB micro-B cable** between the **STLK** connector and your **Personal Computer**
