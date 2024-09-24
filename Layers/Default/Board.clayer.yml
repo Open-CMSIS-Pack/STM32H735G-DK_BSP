@@ -78,6 +78,7 @@ layer:
   groups:
     - group: Board
       files:
+        - file: ./README.md
         - file: ./STM32H735G-DK.h
         - file: ./retarget_stdio.c
 
