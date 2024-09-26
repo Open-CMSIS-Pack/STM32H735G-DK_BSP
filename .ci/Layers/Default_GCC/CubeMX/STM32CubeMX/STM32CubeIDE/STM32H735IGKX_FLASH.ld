@@ -1,4 +1,4 @@
-/* Modified by Arm
+/*
 ******************************************************************************
 **
 **  File        : LinkerScript.ld
@@ -37,7 +37,7 @@ ENTRY(Reset_Handler)
 /* Highest address of the user mode stack */
 _estack = ORIGIN(RAM_D1) + LENGTH(RAM_D1);    /* end of RAM */
 /* Generate a link error if heap and stack don't fit into RAM */
-_Min_Heap_Size = 0x400;      /* required amount of heap  */
+_Min_Heap_Size = 0x10000;      /* required amount of heap  */
 _Min_Stack_Size = 0x400; /* required amount of stack */
 
 /* Specify the memory areas */
@@ -153,16 +153,6 @@ SECTIONS
     . = ALIGN(4);
     _ebss = .;         /* define a global symbol at bss end */
     __bss_end__ = _ebss;
-  } >RAM_D1
-
-  /* Drivers buffers and descriptors */
-  .drivers_RAM :
-  {
-    . = ALIGN(4);
-    *(.RxDecripSection)
-    *(.TxDecripSection)
-    *(.driver.*)
-    . = ALIGN(4);
   } >RAM_D1
 
   /* User_heap_stack section, used to check that there is enough RAM left */
