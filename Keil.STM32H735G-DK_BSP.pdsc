@@ -2,7 +2,7 @@
 <package schemaVersion="1.7.36" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Open-CMSIS-Pack/Open-CMSIS-Pack-Spec/v1.7.36/schema/PACK.xsd">
   <name>STM32H735G-DK_BSP</name>
   <vendor>Keil</vendor>
-  <description>STMicroelectronics STM32H7 Series STM32H735G-DK Board Support Pack</description>
+  <description overview="Documentation/OVERVIEW.md">STMicroelectronics STM32H7 Series STM32H735G-DK Board Support Pack</description>
   <url>https://www.keil.com/pack/</url>
   <repository type="git">https://github.com/Open-CMSIS-Pack/STM32H735G-DK_BSP.git</repository>
   <license>LICENSE</license>
@@ -103,16 +103,15 @@
   <boards>
     <!-- STM32H735G-DK -->
     <board vendor="STMicroelectronics" name="STM32H735G-DK" revision="Rev.B"
-           salesContact="https://www.st.com/content/st_com/en/contact-us.html"
-           orderForm   ="https://www.st.com/en/evaluation-tools/stm32h735g-dk.html">
+           salesContact="https://www.st.com/content/st_com/en/contact-us.html">
       <description>STM32 Discovery development board with STM32H735IG MCU</description>
       <image small="Images/Discovery_small.jpg"
              large="Images/Discovery_large.jpg" public="true"/>
       <book category="overview"  name="https://www.st.com/en/evaluation-tools/stm32h735g-dk.html" title="STM32 Discovery board"/>
-      <book category="overview"  name="https://www.st.com/resource/en/data_brief/stm32h735g-dk.pdf" title="Data brief" public="true"/>
-      <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2679-discovery-kit-with-stm32h735ig-mcu-stmicroelectronics.pdf" title="User Manual" public="true"/>
-      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1520-h735i-b02_schematic.pdf" title="Schematics" public="true"/>
-      <book category="other"     name="Documents/README.md" title="Guide" public="true"/>
+      <book category="overview"  name="https://www.st.com/resource/en/data_brief/stm32h735g-dk.pdf" title="Data brief"/>
+      <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2679-discovery-kit-with-stm32h735ig-mcu-stmicroelectronics.pdf" title="User Manual"/>
+      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1520-h735i-b02_schematic.pdf" title="Schematics"/>
+      <book category="other"     name="Documents/README.md" title="Guide"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32H735IGKx"/>
       <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32H735"/>
       <feature type="ODbg"      n="1"              name="On-board ST-LINK-V3E"/>
