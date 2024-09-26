@@ -29,9 +29,9 @@ The table below lists the physical I/O mapping of this CMSIS-Driver VIO implemen
 
 Virtual Resource  | Variable       | Physical Resource on STM32H735G-DK        |
 :-----------------|:---------------|:------------------------------------------|
-vioBUTTON0        | vioSignalIn.0  | PC13: Button USER                         |
-vioLED0           | vioSignalOut.0 | PC2:  LD2 RED                             |
-vioLED1           | vioSignalOut.1 | PC3:  LD1 GREEN                           |
+vioBUTTON0        | vioSignalIn.0  | B2 USER   (PC13)                          |
+vioLED0           | vioSignalOut.0 | LD2 Red   (PC2)                           |
+vioLED1           | vioSignalOut.1 | LD1 Green (PC3)                           |
 */
 
 #include "cmsis_vio.h"
