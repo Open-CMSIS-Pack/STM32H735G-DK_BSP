@@ -14,13 +14,17 @@
 
   <releases>
     <release version="3.0.0-dev">
-      Prepared for new CMSIS-Toolbox CubeMX integration
-      Added Default Board Layer (configured ETH, MCI, USB Device, Arduino (I2C, SPI, UART))
-      Added Blinky example (CMSIS Solution)
-      Updated VIO driver to API 1.0.0
+      Updated for new CMSIS-Toolbox CubeMX integration
       Removed BSP drivers
-      Removed Blinky example (uVision)
+      Removed MDK-Middleware examples
       Removed Platform project
+      Migrated Blinky example to CMSIS Solution
+      Added Default Board Layer
+      CMSIS Drivers:
+      - Updated VIO driver to API 1.0.0
+      Pack Description:
+      - Added LICENSE file
+      - Updated schemaVersion (1.7.36)
     </release>
     <release version="2.0.0" date="2022-04-08">
       Synchronize with Keil:STM32H7xx_DFP.3.0.0
@@ -106,7 +110,7 @@
            salesContact="https://www.st.com/content/st_com/en/contact-us.html">
       <description>STM32 Discovery development board with STM32H735IG MCU</description>
       <image small="Images/Discovery_small.jpg"
-             large="Images/Discovery_large.jpg" public="true"/>
+             large="Images/Discovery_large.jpg"/>
       <book category="overview"  name="https://www.st.com/en/evaluation-tools/stm32h735g-dk.html" title="STM32 Discovery board"/>
       <book category="overview"  name="https://www.st.com/resource/en/data_brief/stm32h735g-dk.pdf" title="Data brief"/>
       <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2679-discovery-kit-with-stm32h735ig-mcu-stmicroelectronics.pdf" title="User Manual"/>
